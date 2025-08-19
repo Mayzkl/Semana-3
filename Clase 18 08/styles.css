@@ -1,0 +1,30 @@
+.titulo {
+    text-align: center;
+    color: white;
+    font-size: 3vw;
+}
+
+.card {
+    max-width: 600px;
+}
+
+.card-body {
+    padding-top: rem;
+}
+
+.card-img-top {
+    height: 400px;
+    object-fit: cover;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 1vw;
+}
+
+p {
+    text-align: center;
+    color: black;
+    font-size: 2vw;
+}

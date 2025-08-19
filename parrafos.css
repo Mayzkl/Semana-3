@@ -1,0 +1,29 @@
+/* css id selector */
+#parrafo1 {
+    text-align: center;
+    color: red;
+}
+
+/* css class selector */
+.parrafo2 {
+    text-align: left;
+    color: blue;
+}
+
+/* css grouping selector */
+p {
+    text-align: center;
+    color: grey;
+}
+
+/* css grouping selector con varios tags */
+h1, h2, p {
+    text-align: center;
+    color: black;
+}
+
+/* css universal selector */
+* {
+    text-align: center;
+    color: greenyellow;
+}

@@ -1,0 +1,38 @@
+/* css mested selector */
+/* descendiente espacio */
+#com option {
+    font-size: 1vw;
+    color: gray;
+}
+
+/* css mested selector */
+/* hijo directo > */
+#com > option {
+    font-size: 2vw;
+    color: gray;
+}
+
+/* css mested selector */
+/* hermano adyacente + */
+#com + option {
+    font-size: 3vw;
+    color: gray;
+}
+
+/* css mested selector */
+/* hermano general ~ */
+#com ~ option {
+    font-size: 1vw;
+    color: blue;
+}
+
+#com {
+    border: 1px solid #ccc;
+    option {
+        font-size: 1vw;
+        color: gray;
+        &:hover{
+            color: orange;
+        }
+    }
+}
