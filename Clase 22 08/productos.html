@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <script>
+            function saludar(){
+                alert("hola");
+                document.getElementById('texto').style.display = 'none';
+            }
+            function tecla(e){
+                if (e.key== "Enter"){
+                    e.preventDefault();
+                    alert('Enter');
+                }
+            }
+            let x, y, z;
+            x = 5;
+            y = 2;
+            z = x + y;
+            z = x % y;
+            z += 2;
+            z *= 2;
+            console.log(z);
+            if (z < 10 && y === 2){ // y == 2  y = "2"
+                console.log("z unitario");
+            }
+            else if (z < 20){
+                console.log('z es decimal');
+            }
+            else {
+                console.log('otro caso');
+            }
+            try {
+                alert('hola')
+                throw'Muy lento';
+            } 
+            catch (err){
+                console.log(err);
+            }
+            console.log(typeof(z));
+            class Persona{}
+            const p = new Persona();
+            if (p instanceof Persona){
+                console.log('es una persona');
+            }
+            if (Math.random() < 0.5){
+                console.log('cara');
+            }
+            else {
+                console.log('sello');
+            }
+
+            //Iteraciones
+
+            for(let i=0; i<3; i++){
+                console.log(i);
+            }
+            let j = 0;
+            while(j<3){
+                console.log(j);
+                j++;
+            }
+            let k = 0;
+            do {
+                console.log(k);
+                k++;
+            } while(k<3)
+            const marcas = ['Bmw', 'Volvo', 'Ford'];
+            let l = 0;
+            let todasMarcas = '';
+            for(;marcas[l];){ // for i in marcas:\
+                todasMarcas += ' ' +marcas[l];
+                l++;
+            }
+            console.log(todasMarcas);
+            let m =0;
+            let tMarcas = '';
+            while(marcas[m]){
+                tMarcas += " " + marcas[m];
+                m++;
+            }
+            console.log(tMarcas);
+        </script>
+    </head>
+    <body>
+        <p id="msg"></p>
+        <select name="producto" id="prod"></select>
+        <script>
+            console.log('Empezo codigo');
+            document.getElementById('msg').innerText = "Hola";
+            document.getElementById("prod").innerHTML = '<option value ="1"></option><option value="2">Talca</option>';
+        </script>
+        <button type="button" onclick="alert('click');">Evento</button>
+        <button type="button" onclick="window.print();">Imprimir</button>
+        <button type="button" onclick="saludar();">Saluda</button>
+        <input id="texto" type="text" onkeydown="tecla(event);">
+        <button type="button" onclick="alert();">evento 2</button>
+    </body>
+</html>
