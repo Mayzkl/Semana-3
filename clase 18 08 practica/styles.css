@@ -1,0 +1,43 @@
+.titulo {
+    text-align: center;
+    color: white;
+    font-size: 3vw;
+}
+
+.card {
+    max-width: 600px;
+}
+
+.card-body {
+    padding-top: rem;
+}
+
+.card-img-top {
+    height: 400px;
+    object-fit: cover;
+}
+
+body {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+button {
+    color: white;
+    border: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 1vw;
+}
+
+p {
+    text-align: center;
+    color: black;
+    font-size: 2vw;
+}
